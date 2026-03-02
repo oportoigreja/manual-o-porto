@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Igreja O Porto — Manual</title>
+  <style>
+    :root {
+      --base-font-size: 18px;
+      --line-height: 1.7;
+      --max-width: 760px;
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #555555;
+      --border: #e9e9e9;
+      --card: #fafafa;
+    }
+    [data-theme="dark"] {
+      --bg: #0f1115;
+      --fg: #f2f2f2;
+      --muted: #b8b8b8;
+      --border: #242833;
+      --card: #141824;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: var(--base-font-size);
+      line-height: var(--line-height);
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 14px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+    .title strong {
+      font-size: 1.05em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .title span {
+      font-size: 0.9em;
+      color: var(--muted);
+    }
+    .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    button {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--fg);
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:active { transform: translateY(1px); }
+    main {
+      padding: 18px 16px 52px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    nav#toc {
+      margin: 14px 0 22px;
+      padding: 14px 14px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+    }
+    nav#toc h2 {
+      font-size: 1.05em;
+      margin: 0 0 10px;
+    }
+    nav#toc a {
+      color: inherit;
+      text-decoration: none;
+    }
+    nav#toc a:hover {
+      text-decoration: underline;
+    }
+    nav#toc ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .toc-indent-3 { margin-left: 12px; }
+    .toc-indent-4 { margin-left: 24px; }
+    /* Preserve paragraph appearance: do NOT style .toc-anchor differently */
+    .toc-anchor { scroll-margin-top: 90px; }
+    p { margin: 10px 0; }
+    ul, ol { margin: 10px 0 10px 22px; padding: 0; }
+    li { margin: 6px 0; }
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 16px 24px;
+      color: var(--muted);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <strong>Manual — Igreja O Porto</strong>
+      <span>Ajuste a leitura com A− / A+ (preferência fica salva)</span>
+    </div>
+    <div class="controls">
+      <button id="decrease" type="button">A−</button>
+      <button id="reset" type="button">Padrão</button>
+      <button id="increase" type="button">A+</button>
+      <button id="theme" type="button">Tema</button>
+    </div>
+  </header>
+
+  <main>
+    <nav id="toc" aria-label="Sumário">
+      <h2>Sumário</h2>
+      <ul id="tocList"></ul>
+    </nav>
+
+    <article id="content">
+<p class="toc-anchor" data-level="2" id="o-porto-1"><strong>O PORTO</strong></p>
+<p>“...e Deus os conduziu ao porto desejado” (Salmo 107:30)</p>
+<p class="toc-anchor" data-level="2" id="visao-missao-e-valores-3"><br/><strong>Visão, Missão</strong><strong> e Valores</strong></p>
+<p class="toc-anchor" data-level="2" id="visao-4"><strong>Visão</strong></p>
+<p><em>Uma comunidade centrada no evangelho, missional, carismática e doxológica</em>.</p>
+<p>Almejamos ser uma igreja centrada no evangelho, que ama a Deus profundamente, vive em comunidade de forma genuína, é engajada na missão de Deus e cheia da vida e do poder do Espírito Santo, com o fim de glorificar a Cristo e abençoar a cidade.</p>
+<p class="toc-anchor" data-level="2" id="missao-7"><strong>Missão</strong></p>
+<p><em>Fazer discípulos de Jesus que manifestam o Seu caráter em todo o tempo e em todos os lugares</em></p>
+<p>Entendemos que cumprimos nossa missão vivendo em comunidade, ensinando a Palavra com fidelidade, buscando a Deus intensamente, servindo e abençoando nossa cidade por meio de ações de justiça social e projetos evangelísticos e culturais. Valorizamos famílias, jovens e crianças, capacitando cada pessoa a manifestar um caráter cristão genuíno, o poder do Espírito Santo e os princípios do Reino de Deus em seus lares, trabalhos, escolas e onde quer que estejam.</p>
+<p></p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="nossos-principios-e-valores-12"><strong>NOSSOS PRINCÍPIOS E VALORES</strong></p>
+<p>Somos uma Igreja que:</p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="ama-a-deus-e-busca-glorifica-lo-doxologia-15"><strong>Ama a Deus e busca glorificá-lo (Doxologia)</strong></p>
+<p>Uma Igreja que ama a Deus profundamente e busca, em tudo, glorificar a Deus e ser cada vez mais parecidos com Cristo Jesus</p>
+<p class="toc-anchor" data-level="2" id="ama-pessoas-comunidade-17"><strong>Ama pessoas (Comunidade)</strong></p>
+<p>Uma Igreja que valoriza, honra e ama pessoas, bem como a vida em comunidade, entendendo que amamos a Deus pela maneira como amamos e servimos os nossos semelhantes e que ser cristão, necessariamente é viver em comunhão.</p>
+<p class="toc-anchor" data-level="2" id="fundamentada-na-palavra-centralidade-do-evangelho-19"><strong>Fundamentada na Palavra (Centralidade do Evangelho)</strong></p>
+<p>Uma igreja que tem a Bíblia Sagrada como sua regra de fé e prática, que se dedica para compreendê-la com clareza, ensiná-la fielmente e que busca expressar a mensagem do evangelho em tudo que faz </p>
+<p class="toc-anchor" data-level="2" id="e-missional-missionalidade-21"><strong>É missional (Missionalidade)</strong></p>
+<p>Uma Igreja engajada na Missão de Deus, tanto local quanto universal, visando alcançar a todos, em todos os lugares, com as boas notícias do Reino de Deus.</p>
+<p class="toc-anchor" data-level="2" id="abencoa-a-cidade-e-promove-impacto-social-impacto-social-23"><strong>Abençoa a cidade e promove Impacto social (Impacto Social)</strong></p>
+<p>Uma comunidade local cujos membros servem o município com seus dons, recursos, habilidades e talentos, e manifestam a justiça social e as obras de Jesus em todas as áreas da sociedade.</p>
+<p><strong>Investe em Famílias e nas Próximas Gerações (Edificação Geracional)</strong></p>
+<p>Uma igreja que edifica famílias que refletem a glória de Cristo e investem na formação de uma nova geração de discípulos que serão sal e luz onde estiverem.</p>
+<p class="toc-anchor" data-level="2" id="e-carismatica-charismata-27"><strong>É Carismática (Charismata)</strong></p>
+<p>Vibrante, viva e carismática. Continuísta, que se move nos dons sobrenaturais do Espírito e que é ardente em sua paixão e busca por Deus e pelo Seu poder.</p>
+<p></p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="o-que-cremos-31"><strong>O QUE CREMOS</strong></p>
+<p class="toc-anchor" data-level="2" id="credo-apostolico-32"><strong>Credo Apostólico</strong></p>
+<p>Creio em Deus Pai, Todo-poderoso, Criador do Céu e da terra.</p>
+<p>Creio em Jesus Cristo, seu único Filho, nosso Senhor, o qual foi concebido por obra do Espírito Santo; nasceu da virgem Maria; padeceu sob o poder de Pôncio Pilatos, foi crucificado, morto e sepultado; ressurgiu dos mortos ao terceiro dia; subiu ao Céu; está sentado à direita de Deus Pai Todo-poderoso, donde há de vir para julgar os vivos e os mortos.</p>
+<p>Creio no Espírito Santo; na Santa Igreja Universal; na comunhão dos santos; na remissão dos pecados; na ressurreição do corpo; na vida eterna.</p>
+<p>Amém.</p>
+<p class="toc-anchor" data-level="2" id="cinco-solas-da-reforma-37"><br/><strong>Cinco Solas da Reforma</strong></p>
+<p><strong>Sola Scriptura, Sola Christus, Sola Gratia, Sola Fide, Soli Deo Gloria</strong></p>
+<p class="toc-anchor" data-level="2" id="sola-scriptura-39"><strong>SOLA SCRIPTURA</strong></p>
+<p>Reafirmamos a Escritura inerrante como fonte única de revelação divina escrita, única para constranger a consciência. A Bíblia sozinha ensina tudo o que é necessário para nossa salvação do pecado, e é o padrão pelo qual todo comportamento cristão deve ser avaliado.</p>
+<p>Negamos que qualquer credo, concílio ou indivíduo possa constranger a consciência de um crente, que o Espírito Santo fale independentemente de, ou contrariando, o que está exposto na Bíblia, ou que a experiência pessoal possa ser veículo de revelação.</p>
+<p class="toc-anchor" data-level="2" id="solus-christus-42"><strong>SOL</strong><strong>US</strong><strong> CHRISTUS</strong></p>
+<p>Reafirmamos que nossa salvação é realizada unicamente pela obra mediatória do Cristo histórico. Sua vida sem pecado e sua expiação por si só são suficientes para nossa justificação e reconciliação com o Pai.</p>
+<p>Negamos que o evangelho esteja sendo pregado se a obra substitutiva de Cristo não estiver sendo declarada e a fé em Cristo e sua obra não estiver sendo invocada.</p>
+<p></p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="sola-gratia-47"><strong>SOLA GRATIA</strong></p>
+<p>Reafirmamos que na salvação somos resgatados da ira de Deus unicamente pela sua graça. A obra sobrenatural do Espírito Santo é que nos leva a Cristo, soltando-nos de nossa servidão ao pecado e erguendo-nos da morte espiritual à vida espiritual.</p>
+<p>Negamos que a salvação seja em qualquer sentido obra humana. Os métodos, técnicas ou estratégias humanas por si só não podem realizar essa transformação. A fé não é produzida pela nossa natureza não-regenerada.</p>
+<p class="toc-anchor" data-level="2" id="sola-fide-50"><strong>SOLA FIDE</strong></p>
+<p>Reafirmamos que a justificação é somente pela graça somente por intermédio da fé somente por causa de Cristo. Na justificação a retidão de Cristo nos é imputada como o único meio possível de satisfazer a perfeita justiça de Deus.</p>
+<p>Negamos que a justificação se baseie em qualquer mérito que em nós possa ser achado, ou com base numa infusão da justiça de Cristo em nós; ou que uma instituição que reivindique ser igreja mas negue ou condene sola fide possa ser reconhecida como igreja legítima.</p>
+<p class="toc-anchor" data-level="2" id="soli-deo-gloria-53"><strong>SOLI DEO GLORIA</strong></p>
+<p>Reafirmamos que, como a salvação é de Deus e realizada por Deus, ela é para a glória de Deus e devemos glorificá-lo sempre. Devemos viver nossa vida inteira perante a face de Deus, sob a autoridade de Deus, e para sua glória somente.</p>
+<p>Negamos que possamos apropriadamente glorificar a Deus se nosso culto for confundido com entretenimento, se negligenciarmos ou a Lei ou o Evangelho em nossa pregação, ou se permitirmos que o afeiçoamento próprio, a auto-estima e a auto-realização se tornem opções alternativas ao evangelho.</p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="confissao-de-fe-57"><strong>Confissão de fé</strong></p>
+<p>Para mais aprofundamento sugerimos a Decalaração de Cambridge de 1966 e a Confissão de Fé Batista de 1689</p>
+<p></p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="discipulado-e-praticas-de-vida-61"><strong>DISCIPULADO E PRÁTICAS DE VIDA</strong></p>
+<p>Discipulado basicamente trata-se de seguir a Jesus e ajudar outros a segui-lo também. Sendo assim, entendemos que um verdadeiro discípulo de Jesus é alguém comprometido a fazer tudo o que Jesus ensinou, desejando se parecer cada vez mais com Ele. Portanto, acreditamos que o discipulado acontece diariamente, à medida que colocamos em prática os ensinamentos de Cristo e auxiliamos outros a fazer o mesmo. Entendemos que a Palavra de Deus nos instrui algumas práticas de vida essencias para nossa formação espiritual a fim de sermos como Jesus e agirmos como Ele. É dessa maneira que somos moldados diariamente pelo Espírito Santo na semelhança de Jesus para que possamos desenvolver e manifestar o seu caráter em todo o tempo e onde quer que estivermos. </p>
+<p class="toc-anchor" data-level="2" id="praticas-de-vida-63"><strong>Práticas de vida</strong></p>
+<p class="toc-anchor" data-level="2" id="comunidade-64"><u><strong>Comunidade</strong></u></p>
+<ul>
+<li>Cultos</li>
+<li>Âcoras</li>
+<li>Encontros de conexão</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="devocional-68"><u><strong>Devocional</strong></u></p>
+<ul>
+<li>Oração e Jejum</li>
+<li>Leitura Bíblica</li>
+<li>Silêncio e solitude</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="generosidade-72"><u><strong>Generosidade</strong></u></p>
+<ul>
+<li>Contribuições na comunidade local</li>
+<li>Auxilio aos necessitados</li>
+<li>Abençoar uns aos outros</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="testemunho-76"><u><strong>Testemunho</strong></u></p>
+<ul>
+<li>Compartihamento do evangelho com não cristãos</li>
+<li>Envolvimento em missões</li>
+<li>Temunho público de fé</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="servico-80"><u><strong>Serviço</strong></u></p>
+<ul>
+<li>Voluntáriado na comunidade local</li>
+<li>Cidadania</li>
+<li>Servir uns aos outros</li>
+</ul>
+<p></p>
+<p class="toc-anchor" data-level="2" id="jornada-de-discipulado-85"><strong>JORNADA DE DISCIPULADO</strong></p>
+<p class="toc-anchor" data-level="2" id="membresia-86"><strong>Membresia</strong></p>
+<p class="toc-anchor" data-level="2" id="como-ser-membro-87"><strong>Como ser membro</strong></p>
+<ul>
+<li>Batismo</li>
+<li>Curso de membresia</li>
+<li>Entrevista pastoral</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="curso-membresia-91"><strong>Curso </strong><strong>Membresia</strong></p>
+<ul>
+<li>O que cremos</li>
+<li>Princípios e valores</li>
+<li>Práticas de vida</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="o-que-esperamos-de-um-membro-95"><strong>O que esperamos de um membro</strong></p>
+<p>Esperamos que todo membro dedique-se para viver as 5 práticas de vida que adotamos como comunidade de fé. Dentre elas, essencialmente esperamos que todo membro cumpra no mínimo as seguintes ações:</p>
+<ul>
+<li>Frequencia nos cultos</li>
+<li>Ser parte de uma âncora</li>
+<li>Ser contribuinte regular</li>
+<li>Ser voluntário em alguma área 1x/mês</li>
+</ul>
+<p class="toc-anchor" data-level="2" id="outros-cursos-e-treinamentos-101"><strong>Outros </strong><strong>Cursos e Treina</strong><strong>m</strong><strong>entos</strong></p>
+<ul>
+<li>Fomração Espiritual (Práticas de Vida)</li>
+<li>Escola bíblica</li>
+</ul>
+<p></p>
+<p class="toc-anchor" data-level="2" id="cultos-105"><strong>Cultos</strong></p>
+<p>O culto público é a reunião solene da congregação dos santos no Dia do Senhor, aos domingos, quando nos reunimos para celebrar a ressurreição de Cristo e proclamar as grandezas do evangelho. É o encontro central da Igreja reunida, no qual, como corpo, adoramos a Deus em espírito e em verdade. Nele cantamos, oramos, lemos e ouvimos a Palavra juntos, sendo edificados pela exposição fiel das Escrituras e pela ação do Espírito Santo. É expressão visível da nossa comunhão, na qual somos renovados em nosso compromisso de viver para a glória de Deus.</p>
+<p class="toc-anchor" data-level="2" id="ancoras-107"><strong>Âncoras</strong></p>
+<p>As Âncoras são nossos grupos pequenos e expressão prática da vida em comunidade que professamos. Cremos, segundo as Escrituras, que a vida cristã não foi projetada para ser vivida de forma isolada, mas em comunhão intencional, onde somos encorajados, corrigidos, edificados e fortalecidos mutuamente. Somos uma Igreja que se reúne além dos cultos. Nas Âncoras, sentamo-nos juntos para compartilhar o evangelho, orar, partir o pão e cuidar uns dos outros, cultivando relacionamentos genuínos e edificação mútua. Esses encontros acontecem semanal ou quinzenalmente, conforme a dinâmica de cada grupo, e são um ambiente essencial para crescimento, pastoreio e fortalecimento da fé.</p>
+<p class="toc-anchor" data-level="2" id="grupos-de-conexao-109"><br/><strong>Grupos de Conexão</strong></p>
+<p>Entendemos que cada fase da vida apresenta desafios e responsabilidades específicas. Tendo isso em vista, os Grupos de Conexão são espaços voltados para pessoas que compartilham realidades semelhantes, a fim de caminharem juntas à luz do evangelho e aprenderem a viver de maneira mais parecida com Jesus em todas as áreas. Ao integrar um grupo, você participa de encontros orgânicos, reuniões, eventos, leituras e atividades que contribuem para seu crescimento e maturidade na estação atual da sua vida. A organização e comunicação dos grupos acontecem por meio do WhatsApp.</p>
+<p class="toc-anchor" data-level="2" id="grupos-de-conexao-e-discipulado-111"><strong>Grupos de conexão e discipulado</strong></p>
+<ul>
+<li>Homens</li>
+<li>Mulheres</li>
+<li>Finanças &amp; Negócios</li>
+<li>Casais e Pais</li>
+<li>Jovens e Adolescentes</li>
+</ul>
+<p></p>
+<p class="toc-anchor" data-level="2" id="cafe-com-os-pastores-118"><strong>Café com os Pastores</strong></p>
+<p>Encontro bimestral de integração de visitantes e novos membros com os nossos pastores.</p>
+<p></p>
+<p></p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="areas-de-voluntariado-123"><strong>Áreas de voluntariado</strong></p>
+<p>Cremos que Deus concedeu dons, habilidades e recursos a cada membro do Corpo de Cristo, para que sejam utilizados no serviço mútuo e na edificação da Igreja. Entendemos o voluntariado como uma expressão prática de amor, responsabilidade e compromisso com a comunidade de fé. Há diversas oportunidades para que você se envolva ativamente e contribua com aquilo que o Senhor lhe confiou. Abaixo estão algumas das áreas nas quais você pode servir:</p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="culto-126"><strong>Culto</strong></p>
+<ul>
+<li>Práticos (voluntariado geral do culto, incluindo recepção)</li>
+<li>Banda e Som</li>
+<li>Igreja da criança</li>
+<li>Mídia</li>
+<li>Libras</li>
+</ul>
+<p></p>
+<p></p>
+<p class="toc-anchor" data-level="2" id="projetos-e-acoes-sociais-134"><strong>Projetos e Ações Sociais</strong></p>
+<ul>
+<li>Mercado solidário</li>
+<li>Balé</li>
+<li>Curso de libras</li>
+</ul>
+<p></p>
+<p class="toc-anchor" data-level="2" id="conferencia-o-porto-139"><strong>Conferência O Porto</strong></p>
+<p>A Conferência O Porto é nosso principal encontro anual de alinhamento e aprofundamento na Palavra. Realizada no início de cada ano, tem como propósito reafirmar a visão e estabelecer a direção que seguiremos como Igreja ao longo do ano. É também um tempo de comunhão e edificação, no qual recebemos convidados e amigos que cooperam para nosso amadurecimento espiritual como família de Cristo.</p>
+<p></p>
+<p></p>
+    </article>
+  </main>
+
+  <footer>
+    <div>Versão web para leitura em celular (texto reflow + controle de fonte).</div>
+  </footer>
+
+  <script>
+    // Fonte
+    const MIN = 14, MAX = 30, STEP = 2;
+    const root = document.documentElement;
+    const fontKey = "porto_font_px";
+    function getSize() {
+      const saved = Number(localStorage.getItem(fontKey));
+      if (saved) return saved;
+      const computed = getComputedStyle(root).getPropertyValue("--base-font-size").trim();
+      return Number(computed.replace("px","")) || 18;
+    }
+    function setSize(px) {
+      const clamped = Math.max(MIN, Math.min(MAX, px));
+      root.style.setProperty("--base-font-size", clamped + "px");
+      localStorage.setItem(fontKey, String(clamped));
+    }
+    document.getElementById("decrease").addEventListener("click", () => setSize(getSize() - STEP));
+    document.getElementById("increase").addEventListener("click", () => setSize(getSize() + STEP));
+    document.getElementById("reset").addEventListener("click", () => {
+      localStorage.removeItem(fontKey);
+      root.style.setProperty("--base-font-size", "18px");
+    });
+    setSize(getSize());
+
+    // Tema
+    const themeKey = "porto_theme";
+    function applyTheme(t) {
+      if (t === "dark") root.setAttribute("data-theme", "dark");
+      else root.removeAttribute("data-theme");
+    }
+    const savedTheme = localStorage.getItem(themeKey) || "light";
+    applyTheme(savedTheme);
+    document.getElementById("theme").addEventListener("click", () => {
+      const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      const next = current === "dark" ? "light" : "dark";
+      localStorage.setItem(themeKey, next);
+      applyTheme(next);
+    });
+
+    // Sumário a partir de âncoras geradas no HTML (não altera texto)
+    const tocList = document.getElementById("tocList");
+    const anchors = document.querySelectorAll("#content .toc-anchor");
+    anchors.forEach((el) => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#" + el.id;
+      a.textContent = el.textContent.trim();
+      li.appendChild(a);
+      const lvl = Number(el.getAttribute("data-level") || "2");
+      if (lvl === 3) li.classList.add("toc-indent-3");
+      if (lvl >= 4) li.classList.add("toc-indent-4");
+      tocList.appendChild(li);
+    });
+
+    if (anchors.length === 0) {
+      // Se não houver âncoras, esconda o bloco do sumário
+      document.getElementById("toc").style.display = "none";
+    }
+  </script>
+</body>
+</html>
