@@ -118,12 +118,33 @@
       color: var(--muted);
       font-size: 0.9em;
     }
+    .logo img {
+    height: 60px;
+}
+
+/* padrão: modo claro */
+.logo-dark {
+    display: none;
+}
+
+/* quando estiver em modo escuro */
+@media (prefers-color-scheme: dark) {
+    .logo-light {
+        display: none;
+    }
+    .logo-dark {
+        display: block;
+    }
+}
   </style>
 </head>
 <body>
 <header>
   <div class="title" style="display:flex; align-items:center; gap:12px;">
-      <img src="./marca-horizontal-11@4x.png" alt="Igreja O Porto" style="height:60px;">
+       <div class="logo">
+    <img src="./marca-horizontal-11@4x.png" class="logo-light" alt="Igreja O Porto">
+    <img src="./marca-horizontal-12@4x.png" class="logo-dark" alt="Igreja O Porto">
+</div>
       <div>
           <strong>Manual — Igreja O Porto</strong>
           <span>Ajuste a leitura com A− / A+</span>
