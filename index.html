@@ -117,6 +117,23 @@
       padding: 0 16px 24px;
       color: var(--muted);
       font-size: 0.9em;
+    }
+      .footer-logo{
+  display:flex;
+  justify-content:center;
+  margin: 18px 0 10px;
+}
+
+.footer-logo img{
+  height: 56px;      /* ajuste se quiser */
+  max-width: 100%;
+}
+
+.logo-dark{ display:none; }
+
+/* quando o seu botão "Tema" ativa o modo escuro */
+[data-theme="dark"] .logo-light{ display:none; }
+[data-theme="dark"] .logo-dark{ display:block; }
 }
   </style>
 </head>
@@ -310,9 +327,14 @@
     </article>
   </main>
 
-  <footer>
-    <div>Versão web para leitura em celular (texto reflow + controle de fonte).</div>
-  </footer>
+ <footer>
+  <div class="footer-logo">
+    <img class="logo-light" src="./marca-horizontal-11@4x.png" alt="Igreja O Porto">
+    <img class="logo-dark"  src="./marca-horizontal-12@4x.png" alt="Igreja O Porto">
+  </div>
+
+  <div>Versão web para leitura em celular (texto reflow + controle de fonte).</div>
+</footer>
 
   <script>
     // Fonte
